@@ -7,8 +7,12 @@ import InkSplatter from './components/decorative/InkSplatter';
 import OrnamentalDivider from './components/decorative/OrnamentalDivider';
 import CipherDictionary from './components/cipher/CipherDictionary';
 import WhitelistGate from './components/whitelist/WhitelistGate';
+import AdminPage from './pages/AdminPage';
+
+const isAdmin = window.location.pathname === '/admin';
 
 export default function App() {
+  if (isAdmin) return <AdminPage />;
   return (
     <div
       className="relative min-h-screen overflow-x-hidden"
