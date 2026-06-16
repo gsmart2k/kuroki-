@@ -56,7 +56,7 @@ export default function AdminPage() {
 
           {/* Authority seal */}
           <div className="absolute top-5 right-5 z-20 opacity-80">
-            <HankoSeal size={64} />
+            <HankoSeal className="w-16 h-16" />
           </div>
 
           <div className="relative z-10 p-8 md:p-12">
