@@ -6,3 +6,6 @@ dist
 *.local
 .DS_Store
 **/.DS_Store
+
+# Supabase seed files contain live codes — never commit these
+supabase/seed*.sql
